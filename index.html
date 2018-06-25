@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+
+        <script src="https://cdn.rawgit.com/mrdoob/three.js/r84/build/three.js"></script>
+
+        <script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+        <script>
+
+            // Initialize Firebase
+
+            var config = {
+
+            apiKey: "AIzaSyBLgpzBCUGvEj_Mp04itbrTyvYFC8EtFUg",
+
+            authDomain: "tarotapp-f5b54.firebaseapp.com",
+
+            databaseURL: "https://tarotapp-f5b54.firebaseio.com",
+
+            projectId: "tarotapp-f5b54",
+
+            storageBucket: "tarotapp-f5b54.appspot.com",
+
+            messagingSenderId: "26210660102"
+
+        };
+
+        firebase.initializeApp(config);
+
+            var firebaseRef = firebase.database().ref();
+
+        </script>   
+
+    </head>
+
+    <body>
+
+        <a-scene altspace>
+
+            <a-assets>
+
+           <!-- <img id="wood" src="/images/wood.jpg"> 
+
+                <img id="back1" src="/images/back1.png">
+
+                <img id="back2" src="/images/back2.png">
+
+                <img id="back3" src="/images/back3.png"> -->
+
+            </a-assets>
+
+            <a-box color="red"></a-box>
+
+        </a-scene>
+
+    </body>
+
+</html>
